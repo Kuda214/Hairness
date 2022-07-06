@@ -8,7 +8,7 @@ const HairItem = (props) => {
   const { name, tagline, taglineCTA, image } = props.hairPieceInfo;
 
   return (
-    <View style={styles.carContainer}>
+    <View style={styles.hairContainer}>
       <ImageBackground
         source={image}
         style={styles.image}
