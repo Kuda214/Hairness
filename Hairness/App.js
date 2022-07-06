@@ -1,17 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,ImageBackground } from 'react-native';
-import HairItem from './assets/components/HairItem';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import HairList from './components/HairList';
+import Header from './components/Header';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <HairItem 
-        name="Curly Brazillian" 
-        tagLine="Order online for"
-        tagLineCTA ="Touchless Delivery" 
-        img={require("./assets/images/hair0.jpg")}
-      />
-     
+      <Header />
+      <HairList />
       <StatusBar style="auto" />
     </View>
   );
@@ -23,8 +20,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    
   },
-  
-
 });
