@@ -5,7 +5,12 @@ import HairItem from './assets/components/HairItem';
 export default function App() {
   return (
     <View style={styles.container}>
-      <HairItem/>
+      <HairItem 
+        name="Curly Brazillian" 
+        tagLine="Order online for"
+        tagLineCTA ="Touchless Delivery" 
+        img={require("./assets/images/hair0.jpg")}
+      />
      
       <StatusBar style="auto" />
     </View>
